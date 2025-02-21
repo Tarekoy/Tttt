@@ -1,244 +1,57 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
- 
-<script src='//whephiwums.com/vignette.min.js' data-zone='8948299' data-sdk='show_8948299'></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ad Reward System</title>
+    <title>বিজ্ঞাপন</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-image:url(https://i.postimg.cc/FKJbP12Z/rm21-texture-jite-47.jpg);
-            color: #fff;
-            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
-        .container {
-            text-align: center;
-            background-image:url(https://i.postimg.cc/FKJbP12Z/rm21-texture-jite-47.jpg);
+        .ad-container {
+            background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
         }
-        .container h1 {
-            font-size: 16px;
-            color: green;
-            margin-bottom: 10px;
+        .ad-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
         }
-        .developer {
-            font-size: 12px;
-            background-color: rgb(11,190,255);
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            display: inline-block;
-            cursor: pointer;
-        }
-        .stats {
+        .ad-description {
+            font-size: 14px;
+            color: #666;
             margin: 10px 0;
         }
-        .stats p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-        .progress-circle {
-            width: 80px;
-            height: 80px;
-            border: 4px solid green;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px auto;
-        }
-        .progress-circle span {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .buttons button {
-            width: 50%;
-            margin: 5px 0;
-            padding: 10px;
-            font-size: 14px;
+        .ad-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            color: white;
-            background: #598cff;
             cursor: pointer;
-        }
-        .buttons button:hover {
-            background: #ff9aad;
-        }
-        .withdraw-section {
-            margin-top: 20px;
-            display: none;
-            padding: 20px;
-            background-image:url(https://i.postimg.cc/FKJbP12Z/rm21-texture-jite-47.jpg);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-        }
-        .withdraw-section input, .withdraw-section select {
-            width: 100%;
-            padding: 12px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border: 2px solid #555;
-            background-image:url(https://i.postimg.cc/FKJbP12Z/rm21-texture-jite-47.jpg);
-            color: #fff;
-        }
-        .withdraw-section input:focus, .withdraw-section select:focus {
-            border-color: green;
-            outline: none;
-        }
-        .withdraw-section button {
-            background-color: #598cff;
-            width: 100%;
-            padding: 12px;
             font-size: 16px;
-            margin-top: 15px;
-            border-radius: 5px;
-            cursor: pointer;
         }
-        .withdraw-section button:hover {
-            background-color: rgb(128,153,255);
-        }
-        #withdraw-status {
-            color: red;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-        .user-info {
-            margin: 10px 0;
-        }
-        .user-info p {
-            font-size: 14px;
-            margin: 5px 0;
+        .ad-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Dear User Welcome To  Auto MoneTag Ads</h1> <div class="developer" onclick="window.locati Payment Proof Chanel. Any Problem To Contact Admin  </span></p>
-
-</div>
- 
-        <div class="stats">
-            <p>Watched Ads: <span id="watched-ads">100</span></p>1
-            <p>Earn Taka: <span id="earned-points">10</span></p>
-        </div>
-        <div class="progress-circle">
-            <span id="ads-progress">0%</span>
-        </div>
-        <div class="buttons">
-            <button id="watch-ad-btn" onclick="watchAd()">Watch Ad</button>
-            <a href="https://poawooptugroo.com/4/8885038">
-</a>
-            <button id="withdraw-btn" onclick="showWithdrawForm()">Withdraw</button>
-        </div>
-        <div class="withdraw-section" id="withdraw-section">
-            <h3 style="color: orange; margin-bottom: 15px;">Withdrawal Request</h3>
-            <input type="number" id="
- <script src='//whephiwums.com/vignette.min.js' data-zone='8948299' data-sdk='show_8948299'></script>
- 
-from config import API_ID, API_HASH, BOT_TOKEN=8027805011:AAHNnRgy-ir09oHN3uSsWYSLS7NyO6ZyJhU ADMIN_USER_ID, 7312762616,ZONE_ID, 2799758,
-MIN_WITHDRAW_AMOUNT=50
-
-@client.on(events.NewMessage(pattern="/start"))
-async def start(event):
-    user_id = event.sender_id
-    if user_id not in user_data:
-        user_data[user_id] = {"ads_watched": 100, "balance": 10.0}
-
-    await event.respond(
-        "👋 Welcome to the Monetag Ad Bot!\n\n"
-        "🎯 Watch ads & earn money!\n"
-        "💰 Use /balance to check earnings\n"
-        "⚡ Use /watch_ad to watch an ad\n"
-        "🏧 Use /withdraw to request payment"
-    )
-
-@client.on(events.NewMessage(pattern="/watch_ad"))
-async def watch_ad(event):
-    user_id = event.sender_id
-
-    if user_id not in user_data:
-        user_data[user_id] = {"ads_watched": 100, "balance": 10.0}
-
-    ad_url = f"https://syndication.exoclick.com/tag.php?zoneid={ZONE_ID}"2799758
-
-    user_data[user_id]["ads_watched"] += 1
-    user_data[user_id]["balance"] += 0.15  # প্রতিটি বিজ্ঞাপনের জন্য 0.15 টাকা
-
-    await event.respond(
-        f"🔔 Ad Watched Successfully!\n\n"
-        f"📊 Total Ads Watched: {user_data[user_id]['ads_watched']}\n"
-        f"💰 Earned Balance: {user_data[user_id]['balance']:.0f} BDT\n\n"
-        f"👉 [Click Here to Watch Ad]({ad_url})",
-        link_preview=False
-    )
-
-@client.on(events.NewMessage(pattern="/balance"))
-async def check_balance(event):
-    user_id = event.sender_id
-
-    if user_id not in user_data:
-        await event.respond("🚫 You haven't watched any ads yet! Start earning with /watch_ad")
-        return
-
-    balance = user_data[user_id]["balance"]
-    await event.respond(f"💰 Your Current Balance: {balance:.0f} BDT")
-
-@client.on(events.NewMessage(pattern="/withdraw"))
-async def withdraw(event):
-    user_id = event.sender_id
-
-    if user_id not in user_data or user_data[user_id]["balance"] < MIN_WITHDRAW_AMOUNT:
-        await event.respond(f"🚫 Minimum withdraw amount is {MIN_WITHDRAW_AMOUNT} BDT")50
-        return // Effect function
-const ShowAdButton = () => {
-    React.useEffect(() => {
-        if (window.show_8948311) {
-            return
-        }
-
-        const tag = document.createElement('script')
-
-        tag.src = '//whephiwums.com/vignette.min.js'
-        tag.dataset.zone = '8948311'
-        tag.dataset.sdk = 'show_8948311'
-
-        document.body.appendChild(tag)
-    }, [])
-
-    const showAd = () => {
-        show_8948311().then(() => {
-            // add here the function that should be executed after viewing the ad
-        })
-    }
-
-    return <button onClick={showAd}>Show ad</button>
-
-    await event.respond(
-        "🏧 Withdrawal Request Form\n\n"
-        "🔹 Send your payment method & details in this format:\n\n"
-        "/request_withdraw bkash 017XXXXXXXX 100"
-    )
-
-@client.on(events.NewMessage(pattern="/request_withdraw (.*)"))
-async def request_withdraw(event):
-    user_id = event.sender_id
-    if user_id not in user_data or user_data[user_id]["balance"] < MIN_WITHDRAW_AMOUNT:
-        await event.respond(f"🚫 Insufficient Balance! You need at least {MIN_WITHDRAW_AMOUNT} BDT to withdraw.")
-        return
-
-    args = event.pattern_match.group(1).split()
-    if len(args) != 3:
-        await event.respond("🚫 Invalid Format! Use: /request_withdraw bkash 017XXXXXXXX 100")
-        return
+    <div class="ad-container">
+        <div class="ad-title">আমাদের অফার দেখুন!</div>
+        <div class="ad-description">এক্সক্লুসিভ ডিসকাউন্ট পেতে এখনই ক্লিক করুন।</div>
+   <button class="ad-button" onclick="window.location.href='https://www.effectiveratecpm.com/fh2a8d52q?key=1278c3730f07332a20fb9ed5fca27733'">এখনই কিনুন</button> 
+    </div>
+</body>
+</html>
